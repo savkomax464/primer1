@@ -326,7 +326,7 @@
                 const about = await aboutRes.json();
 
                 // Применяем настройки
-                document.getElementById('studio-name').textContent = settings.studio_name || 'Kittenspaw';
+                document.getElementById('studio-name').textContent = settings.studio_name || 'You Name';
                 document.getElementById('studio-desc').textContent = settings.studio_desc || 'Идеальный маникюр';
                 document.getElementById('address-text').textContent = settings.studio_address || 'Адрес не указан';
                 document.getElementById('map-link').href = settings.studio_map_url || '#';
@@ -443,7 +443,7 @@
                         <h3 class="text-[15px] font-semibold">${s.name}</h3>
                         <p class="text-[12px] text-iosGray">${s.description || ''} • ${s.duration_slots}ч</p>
                     </div>
-                    <span class="text-[15px] font-medium text-iosPink">${s.price} BYN</span>
+                    <span class="text-[15px] font-medium text-iosPink">${s.price} ₽</span>
                 </div>
             `).join('');
         }
@@ -600,7 +600,7 @@
                 <button onclick="goToTimes('${s.name}', ${s.duration_slots})" class="w-full text-left p-4 rounded-[20px] border border-black/5 bg-iosCard shadow-sm transition-all flex justify-between items-center">
                     <div>
                         <h4 class="text-[17px] font-semibold text-iosText">${s.name}</h4>
-                        <p class="text-[13px] text-iosGray mt-1">${s.duration_slots}ч • ${s.price} BYN</p>
+                        <p class="text-[13px] text-iosGray mt-1">${s.duration_slots}ч • ${s.price} ₽</p>
                     </div>
                     <div class="w-8 h-8 rounded-full bg-black/5 flex items-center justify-center text-iosGray">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
